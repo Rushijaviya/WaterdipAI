@@ -9,6 +9,12 @@ Task
 - Building a server that can keep track of tasks.
 - Create the necessary database structure and API’s for various task.
 
+<details><summary>Test cases Image</summary>
+
+--------
+![Test case](Testcase.png)
+</details>
+
 ## How to run
 ```bash
 # Fetch the repo using git
@@ -64,17 +70,10 @@ $ python manage.py test
 
     - URL: /v1/tasks/{id}
     - Request Type: PUT
-    - Input: None
-</details>
-
-<details><summary>6. Relocate Item</summary>
-
-    - URL: /v1/tasks
-    - Request Type: GET
     - Input: {title: "Test Task 2", is_completed: false}
 </details>
 
-<details><summary>7. Bulk add tasks</summary>
+<details><summary>6. Bulk add tasks</summary>
 
     - URL: /v1/tasks
     - Request Type: POST
@@ -87,7 +86,7 @@ $ python manage.py test
     }
 </details>
 
-<details><summary>8. Bulk delete tasks</summary>
+<details><summary>7. Bulk delete tasks</summary>
 
     - URL: /v1/tasks
     - Request Type: DELETE
@@ -98,25 +97,6 @@ $ python manage.py test
             {id: 3}
         ]
     }
-</details>
-
-<details><summary>9. Delete Item</summary>
-
-    - URL: api/v1/delete-item/
-    - Request Type: DELETE
-    - Request Body: item_id
-</details>
-
-<details><summary>10. Get All Item List</summary>
-
-    - URL: api/v1/get-item-list/
-    - Request Type: GET
-</details>
-
-<details><summary>11. Get All Item from Storage</summary>
-
-    - URL: api/v1/get-item-list/<storage>
-    - Request Type: GET
 </details>
 
 Note:
